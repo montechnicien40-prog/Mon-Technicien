@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+@layer base {
+  html,
+  body {
+    font-family: var(--font-sans);
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom crisp spreadsheet scrollbars */
+.sheet-scroll::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+
+.sheet-scroll::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.sheet-scroll::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 5px;
+  border: 2px solid #f1f5f9;
+}
+
+.sheet-scroll::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
